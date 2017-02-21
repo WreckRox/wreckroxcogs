@@ -21,7 +21,8 @@ class Help:
 			"!help")
 		help2 = (
 			"Shows this message\n"
-			"Shows more commands with more stuff! ")
+			"Shows more commands with more stuff lol  ")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		audio = (
 			"!play\n"
 			"!pause\n"
@@ -39,8 +40,10 @@ class Help:
 			"Stops song\n"
 			"Shows information about current song\n"
 			"Shows song queue\n"
-			"Searches and plays song from YouTube")
+			"Searches from YouTube and adds to queue.")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		fun = (
+			"!away\n"
 			"!c\n"
 			"!kill\n"
 			"!insult\n"
@@ -52,16 +55,18 @@ class Help:
 			"!calc\n"
 			"!choose\n")
 		fun2 = (
+			"Tells the bot that you are away\n"
 			"Talk with Cleverbot. Mention also works.\n"
 			"Kill anyone\n"
 			"Insult anyone\n"
-			"Flip table (or user)\n"
+			"Flip coin (or user)\n"
 			"Ask 8 ball a question\n"
 			"Play Rock Paper Scissors\n"
 			"Throw stuff at user\n"
 			"Generates LMGTFY Link\n"
 			"Calculate stuff\n"
 			"Choose between several items\n")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		leveler = (
 			"!profile\n"
 			"!rank\n"
@@ -72,6 +77,7 @@ class Help:
 			"Shows user rank.\n"
 			"Change your leveler settins (Global One)\n"
 			"Shows more detailed info about any user.")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 		econ = (
 			"!bank register\n"
@@ -85,6 +91,7 @@ class Help:
 			"Shows your bank balance lmao\n"
 			"Transfers your $$$ to another user\n"
 			"Play slot with your money(Gambling). . .")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		bot = (
 			"!info\n"
 			"!stats\n"
@@ -101,6 +108,7 @@ class Help:
 			"Shows the mod and owner commands.\n"
 			"(^ONLY WORKS FOR USERS WITH \n"
 			"`KICK MEMBERS` PERMISSION)")
+			#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 		ot = (
 			"Join the [SuperBot Community]({}) for more news and support!"
 			"".format(server))
@@ -111,7 +119,7 @@ class Help:
 		embed.add_field(name="Description", value=help2, inline=True)
 		embed.add_field(name="Audio", value=audio)
 		embed.add_field(name="Description", value=audio2)
-		embed.add_field(name="Fun", value=fun, inline=True)
+		embed.add_field(name="Fun and Utils", value=fun, inline=True)
 		embed.add_field(name="Description", value=fun2)
 		embed.add_field(name="Economy", value=econ, inline=True)
 		embed.add_field(name="Description", value=econ2, inline=True)
@@ -138,7 +146,7 @@ class Help:
 			"Plays a link / searches and play")
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Play", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -157,7 +165,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Pause", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -176,7 +184,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Skip", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -195,7 +203,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Prev", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -214,7 +222,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Stop", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -233,7 +241,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Song", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -252,7 +260,7 @@ class Help:
 			)
 
 		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
-		embed.add_field(name="Queue", value=str(boi), inline=False)
+		embed.add_field(name="Audio", value=str(boi), inline=False)
 
 		try:	
 			await self.bot.say(embed=embed)
@@ -278,6 +286,106 @@ class Help:
 		
 		except:
 			await self.bot.say("A WILD EXCEPT APPEARED!")
+
+	@h.command()
+	async def away(self):
+		"""Fun and Utils"""
+
+		boi = (
+			"!away\n\n"
+
+			"Tells the bot that you are away\n"
+			"Usage: `!away <MESSAGE>`"
+			)
+
+		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
+		embed.add_field(name="Fun and Utils", value=str(boi), inline=False)
+
+		try:	
+			await self.bot.say(embed=embed)
 		
+		except:
+			await self.bot.say("A WILD EXCEPT APPEARED!")
+
+	@h.command()
+	async def c(self):
+		"""Fun and Utils"""
+
+		boi = (
+			"!c\n\n"
+
+			"Talk with cleverbot!\n"
+			"Usage: `!c <MESSAGE>` or <@257136385956249600> <MESSAGE>"
+			)
+
+		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
+		embed.add_field(name="Fun and Utils", value=str(boi), inline=False)
+
+		try:	
+			await self.bot.say(embed=embed)
+		
+		except:
+			await self.bot.say("A WILD EXCEPT APPEARED!")
+
+	@h.command()
+	async def kill(self):
+		"""Fun and Utils"""
+
+		boi = (
+			"!kill\n\n"
+
+			"Kill someone!\n"
+			"Usage: `!kill @USER`"
+			)
+
+		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
+		embed.add_field(name="Fun and Utils", value=str(boi), inline=False)
+
+		try:	
+			await self.bot.say(embed=embed)
+		
+		except:
+			await self.bot.say("A WILD EXCEPT APPEARED!")
+
+	@h.command()
+	async def insult(self):
+		"""Fun and Utils"""
+
+		boi = (
+			"!insult\n\n"
+
+			"Insult someone!\n"
+			"Usage: `!insult @USER`"
+			)
+
+		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
+		embed.add_field(name="Fun and Utils", value=str(boi), inline=False)
+
+		try:	
+			await self.bot.say(embed=embed)
+		
+		except:
+			await self.bot.say("A WILD EXCEPT APPEARED!")
+
+	@h.command()
+	async def flip(self):
+		"""Fun and Utils"""
+
+		boi = (
+			"!flip\n\n"
+
+			"Flip a coin or a user!\n"
+			"Usage: `!flip` or `!flip @USER`"
+			)
+
+		embed = discord.Embed(colour=discord.Colour(0x00B9FCFF))
+		embed.add_field(name="Fun and Utils", value=str(boi), inline=False)
+
+		try:	
+			await self.bot.say(embed=embed)
+		
+		except:
+			await self.bot.say("A WILD EXCEPT APPEARED!")
+	
 def setup(bot):
 	bot.add_cog(Help(bot))
